@@ -1,0 +1,340 @@
+body {
+   overflow-x: hidden;
+   padding: 0;
+   margin: 0;
+   font-family: sans-serif;
+}
+
+header {
+   width: 100%;
+   height: 50px;
+   padding: 10px;
+
+   border-width: 1px;
+   border-style: solid;
+   border-color: red;
+   float: left;
+   box-sizing: border-box;
+   padding: 6px;
+   
+}
+
+#brand {
+   margin: 0;
+   padding: 0;
+   font-family: sans-serif;
+   float: left;
+}
+
+#tag_line {
+   margin: 0;
+   padding: 0;
+   margin-top: 10px;
+   float: right;
+   font-family: sans-serif;
+}
+
+nav {
+   width: 100%;
+   height: 75px;
+   background-color: blue;
+   padding: 20px;
+   box-sizing: border-box;
+   float: left;
+   
+
+   /* display: flex;
+   justify-content: space-between;
+   align-items: center; */
+}
+
+#search {
+   width: 400px;
+   height: 40px;
+   float: left;
+   padding: 10px;
+   font-size: 16px;
+   box-sizing: border-box;
+   border: none;
+}
+
+#btn_search {
+   width: 100px;
+   height: 40px;
+   float: left;
+   box-sizing: border-box;
+
+   margin-left: 3px;
+   font-size: 16px;
+   border: none;
+}
+
+#menu_table {
+   width: 600px;
+   height: 40px;
+   box-sizing: border-box;
+   float: right;
+   }
+
+.menu_item {
+   background-color: white;
+   width: 20%;
+   text-align: center;
+   padding: 10px;
+}
+
+.menu_item,a {
+   text-decoration: none;
+   color: black;
+   font-family: sans-serif;
+}
+
+section {
+   width: 100%;
+   height: 1600px;
+   float: left;   
+   box-sizing: border-box;
+   border: 2px solid blue;
+}
+
+#venue{
+   float: left;
+}
+#phone {
+float: right;
+}
+
+
+/* error parts */
+#popular-sweets-box {
+   width: 720px;
+   height: 550px;
+   float: left; 
+   background-color: black;
+   box-sizing: border-box;   
+   margin-top: 30px;
+   text-align: center;
+}
+
+#popular-sweets-title {
+   color: white;
+   font-size: 30px;
+   margin-bottom: 20px;
+}
+
+/* .popular-sweets-images {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+} */
+
+.popular-sweets-image {
+   margin: 5px;
+   width: 300px;
+   height: 200px;
+   border-width: 3px;
+   border-style:solid;
+   border-color:rgb(189, 20, 205);
+}
+
+#rate_list_box{
+   width: 500px;
+   height: 550px;
+   box-sizing: border-box; 
+   float:right;
+   margin-top: 30px;
+}
+
+#rate_header{
+   height: 50px;
+   background-color: black;
+   color: white;
+   text-align: center;
+   font-family: century 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-weight: bold;
+   font-size: 25px;
+}
+#rate_content{
+   background-color: blue;
+}
+
+#s_name{
+   color: wheat;
+   font-family: century 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-size: 25px;
+   padding: 10px;
+   border-bottom-width: 2px;
+   border-bottom-style: solid;
+   border-bottom-color: white;
+}
+
+#rate{
+   list-style: none;
+}
+
+fieldset{
+   width: 690px;
+   height: 550px;
+   float: left;
+   margin-top: 50px;
+   border: 1px solid #ccc;
+   padding: 10px;
+}
+
+legend{
+   font-family: century gothic;
+   font-size: 30px;
+   font-weight: bold;
+}
+
+#order_online{
+   font-size: 17px;
+   font-family: sans-serif;
+}
+
+#order_input{
+   width: 100%;
+   height: 35px;
+   box-sizing: border-box;
+   border: 1px solid #ccc;
+   margin-top: 5px;
+}
+
+textarea{
+   width: 100%;
+   height: 100px;
+   box-sizing: border-box;
+}
+
+#submit_btn{
+   padding: 10px;
+   font-size: 15px;
+   float: right;
+   border: 1px solid #ccc ;
+   background-color: rgba(255, 255, 255, 0.004);
+
+}
+
+#abt_us{
+   width: 450px;
+   height: 550px;
+   float: right;
+   border: 1px solid #ccc;
+   margin-top: 70px;
+   padding: 20px;
+   box-sizing: border-box;
+
+}
+
+#abt_title{
+   text-align: center;
+   font-family: century 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-size: 30px;
+   margin:0px;
+}
+
+#abt_text{
+   text-align: justify;
+   font-family: sans-serif;
+   list-style:25px;
+}
+
+#m_sweets{
+   float: left;
+   width: 100%;
+   box-sizing: border-box;
+}
+
+#More_Sweets{
+   text-align: center;
+   font-family: sans-serif;
+   font-size: 30px;   
+}
+
+#sweets{
+   width: 220px;
+   height: 250px;
+   border: 1px solid #ccc;
+   float: left;
+   margin-right: 25px;
+   margin-left: 10px;
+   margin-top: 15px;
+}
+
+#sweets_end{
+   width: 220px;
+   height: 250px;
+   border: 1px solid #ccc;
+   float: left;
+   margin-top: 15px;
+
+
+}
+
+#sweet_pic{
+   height: 200px;
+   width: 200px;
+   box-sizing: border-box;
+  margin: 10px;
+}
+
+#buy_btn{
+   border: 1px solid #ccc;
+   font-size: 20px;
+   border-radius: 13px;
+  
+}
+
+/* <!------Footer_content-------> */
+
+ footer{
+   width: 100%;
+   height: 250px;
+   box-sizing: border-box;
+   float: left;
+   background-color:black;
+} 
+
+ #Contact_us{
+height: 250px;
+width: 400px;
+box-sizing: border-box;
+float: left;
+padding: 10px;
+padding-left:30px;
+} 
+
+#social_link{
+   height: 250px;
+   width: 400px;
+   box-sizing: border-box;
+   float: right;
+   } 
+   
+   #contact_title{
+      color: white;
+      font-family: sans-serif;      
+   }
+
+   #contact_details{
+      color: white;
+      font-size: 15px;
+      font-family: sans-serif;
+      font-style: normal;
+      margin-bottom: 10px;    
+      text-align:left;  
+      padding: 5px;
+   }
+   #developer{
+      color: white;
+      float: left;
+      font-family: century 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      margin-top: 200px;
+      margin-left: 10px;
+   }
+
+   .fa-brands{
+      margin: 15px;
+   }
+
+

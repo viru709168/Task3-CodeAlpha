@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="pp.css">
+</head>
+<body>
+    
+    <div class="gl-wrapper" id="header"><div class="nwHdr"><a href="https://www.indiamart.com/" class="hd_logo Hd_db hdlft Hd_fl">IndiaMART</a><div class="hdw hdLk clFix Hd_pr Hd_fl"><div class="hd_srch Hd_fl" id="hdSrh"><div class="wrpd3 select-wrapper Hd_pr Hd_fl cpo hd_cFMn" id="drpn" style="display: block;"><button id="hd_searchPlace" class="hd_cFl cpo"><span id="hd_usercity" class="Hd_db">All India</span></button><div id="city_hold" class="hd_cSrb Hd_dbn"><label for="hd_city_sugg"></label><input type="text" id="hd_city_sugg" placeholder="Enter city" value="Enter City" class="srin ui-autocomplete-input" autocomplete="off" role="textbox" aria-autocomplete="list" aria-haspopup="true" onkeyup="AlInd_Op()"><div class="hd_alop Hd_dbn cpo" id="all_India">All India</div></div></div><form name="searform" method="get" onsubmit="return validator(document.searform);" class="Hd_pr" id="hdr_frm" action="https://dir.indiamart.com/search.mp?" autocomplete="off"> <input type="submit" id="btnSearch" class="hd_srBtn ch_fr Hd_pa cpo" value="Search" data-click="^search_button|header"> <input placeholder="Enter product / service to search" id="search_string" name="ss" class="hd_txt ch_fr Hd_fl ui-autocomplete-input" style="width: 340px;" autocomplete="off" role="textbox" aria-autocomplete="list" aria-haspopup="true"> <span class="Tip vSh1 Hd_pa" onclick="_gaq.push([&quot;_trackEvent&quot;, &quot;Voice-Search&quot; , &quot;Voice-icon-click&quot;, 0]);langpopup();" id="vSrIco" style="display: block;"><span class="Tiptext Hd_pa">Search by voice</span></span></form> </div> <a href="//my.indiamart.com/buyertools/postbl?modid=PRODDTL" id="pstBuy" class="pstBuy Hd_dib ih-pbr ch_post_buy Hd_fl">Get Best Price</a><div id="cssmenu1" class="fr1 headermenu Hd_pr"><div id="shopNow"><a href="https://shopping.indiamart.com/" onclick="gaTrack('ECOM');" class="h_ic42">Shopping</a></div> <div id="cvdSp" style="display: none;"></div> <div id="lead_manager" style="display:none" class="head_Icn hdLeadMn"><a class="cpo lmIcn">Lead Manager</a><span class="nme Hd_dib cpo hdBlk Hd_dib"></span></div>
+    <script>
+
+    function readCookie(cname) {
+        var name = cname + "=";
+        try {
+            var decodedCookie = decodeURIComponent(document.cookie);
+        } catch(err) {
+            var decodedCookie = unescape(document.cookie);
+        }
+        var ca = decodedCookie.split(';');
+        for(var i = 0; i <ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+        c = c.substring(1);
+         }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+            }
+            }
+        return "";
+        }
+
+        function getparamVal(cookieStr, key) {
+        if (cookieStr > "") {
+        var val = "|" + cookieStr + "|";
+        var pattern = new RegExp(".*?\\|" + key + "=([^|]*).*|.*");
+        return val.replace(pattern, '$1');
+        } else {
+        return "";
+            }
+        }
+
+
+    var cookie = readCookie('ImeshVisitor');
+    var sell_vr = window.location.hostname == 'dev-seller.indiamart.com' || window.location.hostname == 'stg-seller.indiamart.com' || window.location.hostname == 'seller.indiamart.com';
+    if( (cookie != '' && sell_vr) )
+    document.getElementById("lead_manager").style.display = 'block';
+    </script> <div id="lead_cen" style="display:none" class="head_Icn hdLeadMn"><a class="cpo bDlIcn">BuyLeads</a><span class="nme Hd_dib cpo hdBlk Hd_dib"></span></div>
+    <script>
+        var cookie = readCookie('ImeshVisitor');
+        var sell_vr = window.location.hostname == 'dev-seller.indiamart.com' || window.location.hostname == 'stg-seller.indiamart.com' || window.location.hostname == 'seller.indiamart.com';
+        if( (cookie != '' && sell_vr) )
+        document.getElementById("lead_cen").style.display = 'block';
+    </script> <div id="prod_cen" style="display:none" class="head_Icn"><a class="cpo pdIcn">Products</a><span class="nme Hd_dib cpo hdBlk Hd_dib"></span></div>
+    <script>
+        var cookie = readCookie('ImeshVisitor');
+        var sell_vr = window.location.hostname == 'dev-seller.indiamart.com' || window.location.hostname == 'stg-seller.indiamart.com' || window.location.hostname == 'seller.indiamart.com';
+        if( (cookie != '' && sell_vr) )
+        document.getElementById("prod_cen").style.display = 'block';
+    </script>      <div id="sell-center"><a href="https://seller.indiamart.com/" id="ch_sell" class="cpo h_ic14" onclick="gaTrack('Sell on IndiaMART');">Sell</a></div><div id="help-center"><a href="https://help.indiamart.com/" onclick="gaTrack('Help');" class="h_ic13">Help</a><div class="heldrdwn"><p class="cur_pt">Find answers to your queries</p><a href="https://help.indiamart.com/buyer-help/" onclick="gaTrack('Buyer_Help');" class="help-desk hMb15 wli Hd_fl cpo h_ic28 Hd_pr Hd_db">For <b>Buying</b></a><a href="https://help.indiamart.com/seller-help/" onclick="gaTrack('Seller_Help');" class="help-desk hMb15 wli Hd_fl cpo h_ic29 Hd_pr Hd_db">For <b>Selling</b></a><a href="https://help.indiamart.com/user-feedback/" onclick="gaTrack('Feedback');" class="clear h_ic30 help-desk Hd_pr Hd_db">Share your Feedback</a><a href="https://help.indiamart.com/complaint-registration/" onclick="gaTrack('Complaint');" class="h_ic31 help-desk Hd_pr Hd_db">Raise a Complaint</a><span class="cur_pt wAnch h_ic32 Hd_pr Hd_db">Email us on<b class="Dsp_b Hd_db">customercare@indiamart.com</b></span><span id="cccare" class="cur_pt wAnch h_ic33 Hd_pr Hd_db">Call us at <b>096-9696-9696</b></span><span class="wAnch h_ic35 help-desk cpo Hd_pr Hd_db Hd_db" id="chatwithus" onclick="gaTrack('Help_chat_with_us');hd_chtppup();">Chat With us</span><a href="https://help.indiamart.com/video?track=selleracademy" onclick="gaTrack('Help_Seller_Academy');" class="h_ic41 help-desk Hd_pr Hd_db">Seller Academy</a></div></div><div id="message-center"><a onclick="gaTrack('Messages');msgwidget();" class="h_ic12 cpo">Messages<span class="cntmsg Hd_pa"></span></a></div>
+     <script>
+     var sell_vr = window.location.hostname == 'dev-seller.indiamart.com' || window.location.hostname == 'stg-seller.indiamart.com' || window.location.hostname == 'seller.indiamart.com';
+     var sell_seller = "<a class='h_ic14' id='sellTool'>Seller Tools</a>";
+	 var cookie = readCookie('ImeshVisitor');
+     var utype = getparamVal(cookie, 'utyp');
+     if (sell_vr) {
+        if(cookie != '') {
+        document.getElementById("sell-center").style.display = 'none';
+        document.getElementById("message-center").style.display = 'none';
+        }
+        else 
+        document.getElementById("message-center").style.display = 'none';
+     }      
+     if ((utype != "") && ((utype == 'P') || (utype == 'F')) && (!sell_vr)) {
+		document.getElementById("sell-center").innerHTML = sell_seller;
+	 }
+     </script>      <div class="hgtb Hd_pr Hd_bxCt" id="lshead"><a onclick="user_signIn(); gaTrack('Sign In');" target="_top" class="rmv cpo ico-usr Hd_dib" id="user_sign_in" rel="nofollow"><span class="Hd_pr">Sign In</span></a><div class="sign-hover-dropdn Hd_dbn"><div class="u_sigin"><a onclick="user_signIn(); gaTrack('Log In');" class="cont_s cpo Hd_db">Sign In </a><div class="hover-new-user">New to IndiaMART?<p class="h_clr bld Hd_dib cpo" onclick="user_register();gaTrack('Start Here');return false;">Join Now</p></div></div><a href="//my.indiamart.com/" class="ch_my_dash h_ic1" onclick="gaTrack('Home');">Home</a><a class="post_buy_req h_ic2" href="//my.indiamart.com/buyertools/postbl/" rel="nofollow" onclick="gaTrack('Post Your Requirement'+for_tracking);">Post Your Requirement </a><a href="https://my.indiamart.com/business-buyer/" id="bus_buy" class="cpo ver_busbuyr h_ic37" onclick="gaTrack('vbb_click');">Verified Business Buyer</a><a class="h_ic34" onclick="gaTrack('Products_Services Directory');" href="//dir.indiamart.com/" rel="nofollow">Products/Services Directory</a><a class="h_ic21" href="//my.indiamart.com/buyertools/managebl/" rel="nofollow" onclick="gaTrack('My Orders');">My Orders</a><a class="recely h_ic4" href="//my.indiamart.com/feeds/myactivities/" onclick="gaTrack('Recent Activity');" rel="nofollow">Recent Activity</a><a class="h_ic6 stngs" href="//my.indiamart.com/settings/mysettings/" rel="nofollow" onclick="gaTrack('Settings');">Settings<span class="in-map Hd_pr">NEW</span></a><a onclick="gaTrack('Pay with Indiamart');" rel="nofollow" class="cpo hpay" id="pay" href="https://paywith.indiamart.com/?bannerid=cntrlheader" target="_blank">Pay with IndiaMART<p>Secure &amp; hassle-free payments</p></a><a onclick="gaTrack('Ship With Indiamart');" rel="nofollow" class="hpay" id="ship" href="https://shipwith.indiamart.com/?bannerid=cntrlheader&amp;afl_id=-906" target="_blank">Ship With IndiaMART<p>Easy booking of transport</p></a>  <a onclick="gaTrack('Download App');" rel="nofollow" class="hd-dw-apps cpo h_ic16" id="dwnappp">Download App</a></div></div>
+     <script>
+        function readCookie(cname) {
+        var name = cname + "=";
+        try {
+            var decodedCookie = decodeURIComponent(document.cookie);
+        } catch(err) {
+            var decodedCookie = unescape(document.cookie);
+        }
+        var ca = decodedCookie.split(';');
+        for(var i = 0; i <ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+        c = c.substring(1);
+         }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+            }
+            }
+        return "";
+        }
+
+        function getparamVal(cookieStr, key) {
+        if (cookieStr > "") {
+        var val = "|" + cookieStr + "|";
+        var pattern = new RegExp(".*?\\|" + key + "=([^|]*).*|.*");
+        return val.replace(pattern, '$1');
+        } else {
+        return "";
+            }
+        }
+
+        var cookie = readCookie("ImeshVisitor");
+        if ( cookie != ""){
+        var namep=getparamVal(decodeURIComponent(cookie), 'fn');
+        var forname = '<span class="rmv Hd_dib cpo ico-usr Hd_pr">Hi <span class="Hd_dib Hd_pr">'+namep+'</span></span>';
+        document.getElementById("lshead").innerHTML = forname;
+        }
+        else{
+            var sgnhtm = '<a class="rmv Hd_dib cpo ico-usr" href="https://my.indiamart.com"><span class="Hd_pr">Sign In</span></a>';
+            document.getElementById("lshead").innerHTML = sgnhtm;
+        }
+     </script></div></div></div> </div>
+</body>
+</html>

@@ -1,0 +1,15 @@
+element.style{
+    width: 413px;
+}
+
+.gl-wrapper {
+    background-color: #2e3192;
+    transition: transform 0.2s ease-in-out;
+    z-index: 8;
+    height: 55px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 12px;
+}

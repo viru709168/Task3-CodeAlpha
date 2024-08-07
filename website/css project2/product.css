@@ -1,0 +1,495 @@
+body{
+        padding: 0;
+        margin: 0;
+        background-image: url('bg.jpg');
+        background-size: 100% 700px;
+        background-attachment: fixed;    
+    }
+
+nav{    
+        width: 100%;
+        height: 220px;
+        background-color: rgba(0, 0, 0, 0.8);
+        float: left;
+        box-sizing: border-box;
+    }
+
+#Welcome{
+            font-size: 80px;
+            color:white;
+            text-align: center;
+            padding: 0;
+            margin: 0;
+        }
+
+#menu{
+        width: 750px;
+        height: 70px;
+        box-sizing: border-box;
+        margin-top: 10px;
+    }
+
+#nav_item{
+            width: 20%;
+            height: 70px;
+            border: 2px solid white;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+    a{
+        text-decoration: none;
+        color: white;
+        font-family: sans-serif;
+        font-size: 20px;
+    }
+
+#home_section{
+                width: 700px;
+                height: 407px;
+                box-sizing: border-box;
+                float: right;
+                background-image: url('section-bg.png');
+            }
+
+#logo{
+        width: 150px;
+        height: 180px;
+        box-sizing: border-box;
+        border-width: 5px;
+        border-style: solid;
+        border-color: #fff;
+        margin-left: 150px;
+        margin-top: 90px;
+        
+    }
+
+#logo_text{
+            margin: 0;
+            padding: 0;
+            font-family: verdana ;
+            color: white;
+            font-size: 160px;
+            margin-top: -20px;
+        }
+
+#domain{
+            margin: 0;
+            padding: 0;
+            color: #fff;
+            font-family: verdana;
+            font-size: 40px;
+            text-align: center;
+            margin-left: 150px;
+        }
+
+
+/* navbar and section start coding  */
+
+#domain_name{
+                font-size: 60px;
+                color:white;
+                text-align: center;
+                padding: 0;
+                margin: 0;
+            }
+
+#Login_section  {
+                    width: 700px;
+                    height: 407px;
+                    box-sizing: border-box;
+                    float: right;
+                    background-image: url('section-bg.png');
+                    padding: 60px;
+                }
+
+fieldset{
+            width: 350px;
+            height: 250px;
+            border-width: 3px;
+            border-style: solid;
+            border-color: white;
+            margin-left: 180px;
+            padding: 20px;
+        }
+
+legend  {
+            font-family: sans-serif ;
+            font-weight: bold;
+            color: white;
+            font-size: 30px;
+        }
+
+#login_form{
+                font-family: sans-serif;
+                color: white;
+                font-size: 22px;
+            }
+
+#UserName   {
+                width: 100%;
+                height: 30px;
+                background-color: inherit;
+                border: none;
+                border-width: 2px;
+                border-style: solid;
+                border-color: #fff;
+                margin-top: 10px;
+                color: white;
+                font-size: 17px;
+                margin-bottom: 10px;
+
+            }
+
+#password{
+            width: 100%;
+            height: 30px;
+            background-color: inherit;
+            border: none;
+            border-width: 2px;
+            border-style: solid;
+            border-color: #fff;
+            margin-top: 10px;
+            color: white;
+            font-size: 17px;
+        }
+
+#Login_btn{
+                width: 100px;
+                height: 35px;
+                float: right;
+                margin-top: 20px;
+                background-color: inherit;
+                border: none;
+                border-width: 2px;
+                border-style: solid;
+                border-color: #fff;
+                color: white;
+                font-size: 18px;
+                font-family: century 'Franklin Gothic Medium';
+            }
+
+/* navbar and section close coding  */
+
+
+/* sign up section start in html  */
+
+#sign_section{
+                width: 700px;
+                height: 475px;
+                box-sizing: border-box;
+                float: right;
+                background-image: url('section-bg.png');
+                padding: 25px;
+
+            }
+
+#field{
+            width: 350px;
+            height: 400px;
+            border-width: 3px;
+            border-style: solid;
+            border-color: white;
+            margin-left: 200px;
+            padding: 20px;
+        } 
+
+#sign_form{
+                font-family: sans-serif;
+                color: white;
+                font-size: 22px;
+            }
+
+#UserName1{
+            width: 100%;
+            height: 30px;
+            background-color: inherit;
+            border: none;
+            border-width: 2px;
+            border-style: solid;
+            border-color: #fff;
+            margin-top: 10px;
+            color: white;
+            font-size: 17px;
+            margin-bottom: 10px;
+        }
+
+    #password2{
+                width: 100%;
+                height: 30px;
+                background-color: inherit;
+                border: none;
+                border-width: 2px;
+                border-style: solid;
+                border-color: #fff;
+                margin-top: 10px;
+                color: white;
+                font-size: 17px;
+                margin-bottom: 10px;
+
+            }
+
+    #email{
+            width: 100%;
+            height: 30px;
+            background-color: inherit;
+            border: none;
+            border-width: 2px;
+            border-style: solid;
+            border-color: #fff;
+            margin-top: 10px;
+            color: white;
+            font-size: 17px;
+            margin-bottom: 10px;
+
+        }
+
+    #number{
+            width: 100%;
+            height: 30px;
+            background-color: inherit;
+            border: none;
+            border-width: 2px;
+            border-style: solid;
+            border-color: #fff;
+            margin-top: 10px;
+            color: white;
+            font-size: 17px;
+            margin-bottom: 10px;
+
+        }
+
+    #Login_btn1{
+                    width: 100px;
+                    height: 35px;
+                    float: right;
+                    margin-top: 20px;
+                    background-color: inherit;
+                    border: none;
+                    border-width: 2px;
+                    border-style: solid;
+                    border-color: #fff;
+                    color: white;
+                    font-size: 18px;
+                    font-family: century 'Franklin Gothic Medium';
+                }
+
+/* contact section :start */
+
+#contact_section{
+    width: 700px;
+    height: 475px;
+    box-sizing: border-box;
+    float: right;
+    background-image: url('section-bg.png');
+    padding: 25px;
+}
+
+#Contact{
+    font-style: 20px;
+    color: white;
+    font-style: normal;
+    font-family: sans-serif;
+    line-height: 40px;
+}
+
+/* contact section :close */
+
+/* start product page section coding  */
+
+
+#product_section{
+    width: 100%;
+    height: 2490px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: red;
+    float: left;
+    box-sizing: border-box;
+
+}
+
+
+#brands{
+    width: 100%;
+    height: 315px;
+    background-color: rgba(255, 255, 255, 0.8);
+    float: left;
+    box-sizing: border-box;
+
+}
+
+#brand_heading{
+    text-align: center;
+    font-family: century 'Franklin Gothic Medium' ;
+    font-size: 40px;
+}
+
+#brand_pic{
+    width: 200px;
+    height: 80px;
+    float: left;
+    box-sizing: border-box;
+    border: 3px solid black;
+    margin: 25px;
+    margin-top: 10px;
+}
+
+#search1{
+    width: 60%;
+    height: 50px;
+    box-sizing: border-box;
+    float: left;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 10px;
+    border: none;
+    border: 1px solid #ccc;
+    font-size: 18px;
+    padding: 10px;
+    background-image: url(search.png);
+    background-size: 40px 40px;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+#beauty_products{
+width: 100%;
+height: 2175px;
+float: left;
+background-color: rgba(0, 0, 0, 0.8);
+box-sizing: border-box;
+}
+
+
+#zest{
+text-align: center;
+color: #fff;
+font-family: century 'Franklin Gothic Medium' ;
+font-size: 35px;
+}
+
+#zest_products_pic{
+    width: 250px;
+    height: 300px;
+    border: 2px solid white;
+    float: left;
+    box-sizing: border-box;
+    margin: 31px;
+}
+
+#img_zept{
+    width: 100%;
+    height: 240px; 
+    box-sizing: border-box;
+    padding: 0;margin: 0;
+   
+}
+
+
+#Dove{
+    text-align: center;
+    color: #fff;
+    font-family: century 'Franklin Gothic Medium' ;
+    font-size: 35px;
+}
+
+#Dove_products_pic{
+    width: 250px;
+    height: 300px;
+    border: 2px solid white;
+    float: left;
+    box-sizing: border-box;
+    margin: 31px;
+}
+
+#Beauty{
+    text-align: center;
+    color: #fff;
+    font-family: century 'Franklin Gothic Medium' ;
+    font-size: 35px;
+}
+
+#Beauty_products_pic{
+    width: 250px;
+    height: 300px;
+    border: 2px solid white;
+    float: left;
+    box-sizing: border-box;
+    margin: 31px;
+}
+
+
+#Parsona{
+    text-align: center;
+    color: #fff;
+    font-family: century 'Franklin Gothic Medium' ;
+    font-size: 35px;
+}
+
+#Parsona_products_pic{
+    width: 250px;
+    height: 300px;
+    border: 2px solid white;
+    float: left;
+    box-sizing: border-box;
+    margin: 31px;
+}
+
+#AMIKA{
+    text-align: center;
+    color: #fff;
+    font-family: century 'Franklin Gothic Medium' ;
+    font-size: 35px;
+}
+
+#AMIKA_products_pic{
+    width: 250px;
+    height: 300px;
+    border: 2px solid white;
+    float: left;
+    box-sizing: border-box;
+    margin: 31px;
+}
+#product_name{
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-family: sans-serif;
+    margin-top: 3px;
+    font-size: 19px;
+    text-align: center;
+}
+
+#product_price{
+    margin: 0;padding: 0;
+    color: white;
+    margin: 6px;
+    font-family: sans-serif;
+    float: left;
+
+}
+
+#buy{
+    margin: 0;padding: 0;
+    color: white;
+    margin: 6px;
+    font-family: sans-serif;
+    float: right;
+}
+
+/* close product page section coding  */
+
+
+/* start product page footer coding  */
+
+footer{
+    width: 100%;
+    height: 60px;
+    box-sizing: border-box;
+    float: left;
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+
+}
+/* close product page footer coding  */

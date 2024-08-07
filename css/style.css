@@ -1,0 +1,489 @@
+@charset "UTF-8";
+
+body{
+    padding: 0;
+    margin: 0;
+}
+#menu{
+    display: none;
+}
+
+@media(max-width:992px)
+{
+    .desktop_menu{
+        display: none;
+    }
+    .slicknav_menu{
+        display: block;
+    }
+}
+
+@media(min-width:992px)
+{    
+    .desktop_menu{
+        display: block;
+    }
+
+    .slicknav_menu{
+        display: none;
+    }
+}
+
+
+
+ .desktop_menu{
+    width: 100%;
+    background-color: white;
+    box-shadow: 0px 5px 8px #323232;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    z-index: 10000;
+}
+
+
+
+.line{
+    float: right;
+}
+
+.desktop_menu li{
+    padding: 20px;
+    display: inline-block
+}
+.desktop_menu li:hover{
+background-color:#0050c7;
+}
+
+.desktop_menu li a{
+    text-decoration: none;
+    font-family: "Maven Pro", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: #323232;
+
+}
+
+.desktop_menu li a:hover{
+    color: #ccc;
+}
+
+
+.brand_name{
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    float: left; 
+    margin-left: 20px;
+}
+
+.brand_name a{
+   font-size: 30px; 
+   text-decoration: none;
+   font-family: "Maven Pro", sans-serif;
+    font-weight: 600;
+} 
+
+.my-project{
+    padding-left: 50px;
+    padding-right: 50px;
+    box-sizing: border-box;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+}
+
+#project{
+    font-family: "Maven Pro", sans-serif;
+    font-weight: 900;
+    padding: 10px;
+    text-align: center;
+    color: #323232;
+    font-size: 30px;
+    padding-bottom: 20px;
+
+}
+.about{
+    text-align: center;
+    font-family: "Maven Pro", sans-serif;
+    font-weight: 900;
+    font-size: 40px;
+    color: #323232;
+    margin-top: 80px;
+    margin-bottom: 10px;
+    
+}
+
+
+.row_one{
+    width: 100%;
+    display: flex;
+    margin-bottom: 10px;
+
+}
+ 
+.col{
+    width: 25%;
+    box-sizing: border-box;
+    float: left;    
+    padding-left: 20px;
+    padding-right: 20px;
+} 
+
+.fast_box{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-bottom: 4px  solid #2FB7FA ;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    box-shadow: 0px 0px 10px #ccc;
+    border-radius:5%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.fast_box h2{
+    font-family: "Maven Pro", sans-serif;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.fast_box p{
+    text-align: center;
+    font-family: "Maven Pro", sans-serif;
+    margin: 0;
+}
+.fast_box div{
+    width: 100px;
+    height: 100px;
+    background-color: #DBF3FE;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.fast_box div span{
+    font-size:60px;
+    color: #2FB7FA;
+}
+
+
+
+.row_two{
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 30px;
+    display: flex;
+}
+
+.col_left{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    /* float: left; */
+    box-sizing: border-box;
+    padding: 30px;
+    margin-top: 20px;
+
+
+}
+
+.col_right{
+    width: 50%;
+    /* float: left; */
+    box-sizing: border-box;
+    padding: 30px;
+    padding-top: 30px;
+
+}
+
+.col_right h1{
+    text-align: center;
+    font-family: "Maven Pro", sans-serif;
+
+}
+
+.progrees_box{
+    width: 100%;
+    background-color: #ddd;
+    height: 20px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    margin-top: 6px;
+
+
+}
+
+.progress_bar_html{
+    width:0%;
+    background-color: green;
+    height: 20px;
+    text-align: center;
+    border-radius: 15px;
+
+}
+
+.progress_bar_CSS2{
+    width:0%;
+    background-color:yellowgreen ;
+    height: 20px;
+    text-align: center;
+    border-radius: 15px;
+
+}
+.progress_bar_CSS3{
+    width:0%;
+    background-color:lightblue ;
+    height: 20px;
+    text-align: center;
+    border-radius: 15px;
+
+}
+.progress_bar_JS{
+    width:0%;
+    background-color:red;
+    height: 20px;
+    text-align: center;
+    border-radius: 15px;
+
+}
+
+.progress_bar_JQUARY{
+    width:0%;
+    background-color:navy ;
+    height: 20px;
+    text-align: center;
+    border-radius: 15px;
+
+}
+
+
+
+.col_right label{
+    font-family: "Maven Pro", sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    margin-left: 15px;
+}
+
+.progrees_box span{
+    color: white;
+}
+
+.row_tree{
+    width: 100%;
+    display: flex;
+    margin-bottom: 10px; 
+}
+
+.col_web{
+    width: 25%;
+    box-sizing: border-box;
+    float: left;    
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.web_box{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-bottom: 4px  solid #2FB7FA ;
+    box-shadow: 0px 0px 10px #ccc;
+    border-radius:5%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.web_box img{
+    border-radius: 5%;
+}
+
+#link{
+    padding: 0;
+    margin: 0;
+    font-family: "Maven Pro", sans-serif;
+    padding: 5px;
+}
+
+#link a{
+    text-decoration: none;
+    color: #323232;
+
+}
+
+#link a:hover{
+    color: blue;
+}
+
+.col_three{
+    width: 33.33%;
+    height: auto;
+    float: left;
+    padding: 20px;
+    box-sizing: border-box;
+    
+}
+
+.userv{
+    width: 100%;
+    border: 1px solid #ccc;
+    height: auto;  
+    padding: 20px;  
+    box-sizing: border-box;
+}
+.user-top{
+display: flex;
+}
+
+.user-pic img{
+    border-radius: 50%;
+    padding: 0;
+    margin: 0;
+    
+}
+
+.user-name h3{
+    font-family: "Maven Pro", sans-serif;    
+    padding: 0 20px;
+    margin:0px;
+    padding-top: 40px;
+    font-size: 19px;
+}
+
+.user-name small{
+    font-family: "Maven Pro", sans-serif;   
+    padding: 0 30px;
+
+} 
+.user-bottom p{
+    font-family: "Maven Pro", sans-serif; 
+    font-size: 18px;  
+    text-align: justify;
+    padding: 0;
+    margin: 0;
+}
+     /* footer baar */
+ 
+    footer {
+        background-color:#ccc;
+        padding: 20px 0;
+        text-align: center;
+        border-top: 1px solid #e7e7e7;
+      }
+      
+      .row_five {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+      }
+      
+      .col_five {
+        flex: 1;
+        min-width: 200px;
+        margin: 10px;
+      }
+      
+      h1 {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+      }
+      
+      address {
+        font-style: normal;
+        margin: 5px 0;
+      }
+      
+      .mdi {
+        font-size: 1.5em;
+        margin: 5px;
+        color: #333;
+      }
+      
+      .developer {
+        margin-top: 20px;
+        font-size: 0.9em;
+        color: #777;
+      }
+      
+      /* Change to your desired hover color */
+
+      .mdi:hover {
+        color: #0073e6; 
+      }
+      
+      @media (max-width: 768px) {
+        .row_five {
+          flex-direction: column;
+          align-items: center;
+        }
+      
+        .col_five {
+          max-width: 100%;
+          margin-bottom: 20px;
+        }
+      }
+      
+      @media (max-width: 480px) {
+        h1 {
+          font-size: 1.2em;
+        }
+      
+        .mdi {
+          font-size: 1.2em;
+        }
+      
+        .developer {
+          font-size: 0.8em;
+        }
+      }
+      
+   
+
+@media(max-width:768px){
+    .row_one
+    {
+     flex-direction: column;
+    }
+
+    .col
+        {
+        width: 100%;
+    }
+    
+    .row_two{
+        flex-direction: column;
+    }
+
+    .col_left,.col_right{
+        width: 100%;
+
+    }
+
+    .row_tree
+    {
+     flex-direction: column;
+    }
+     .col_web
+    {
+        width: 100%;
+    }
+    .col_three
+    {
+     flex-direction: column;
+    }
+    .col_three
+    {
+        width: 100%;
+    }
+}
